@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="AddressBookForm.css" rel="stylesheet" />
+    <title>Address Book Application</title>
+  </head>
+
+  <body>
+    <header class="header-content header">
+      <div class="logo-content">
+        <img src="Address Book logo.png" alt="" />
+        <div>
+          <span class="add-text">Address</span><br />
+          <span class="add-text add-book">Book</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="form-content">
+      <form class="form" action="#" onsubmit="save(); return false">
+        <div class="form-head">Person Address Form</div>
+        <!-- Name Text Box -->
+        <div class="row-content">
+          <label class="label text" for="name">Full Name:</label>
+          <input type="text"class="text"id="name"placeholder="Enter Name..."required/>
+          <error-output for="text" class="text-error"></error-output>
+        </div>
+        <!-- Name Text Box End  -->
+
+        <!-- Address Text Box Start -->
+        <div class="row-content">
+          <label class="lable-text" for="address">Address:</label>
+          <input
+            type="text"
+            class="text"
+            id="address"
+            placeholder="Address..."
+            required
+          />
+        </div>
+        <!-- Address end -->
+
+        <!-- dropdown start -->
+        <div class="row-content" id="dropdown" for="location">
+          <select name="city" id="city">
+            <option value="city">City</option>
+            <option value="dhule">Dhule</option>
+            <option value="pune">Nagpur</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="nashik">Nashik</option>
+            <option value="mumbai">Nanded</option>
+          </select>
+
+          <select class="state" id="state">
+            <option value="state">State</option>
+            <option value="maharashtra">Maharashtra</option>
+            <option value="gujrat">Gujrat</option>
+            <option value="uttarpradesh">Uttar Pradesh</option>
+            <option value="rajsthan">Rajsthan</option>
+            <option value="karnataka">Karnataka</option>
+          </select>
+
+          <select class="zipcode" id="zipcode">
+            <option value="zip">Zip Code</option>
+            <option value="424002">424002</option>
+            <option value="424001">424001</option>
+            <option value="390184">390184</option>
+            <option value="524007">524007</option>
+            <option value="415752">415752</option>
+          </select>
+        </div>
+        <!--dropdown end here -->
+
+        <!-- phone number start -->
+        <div class="row-content">
+          <!-- <label for="phonenumber" class="lable-text"></label> -->
+          <input
+            type="text"
+            class="text"
+            id="phonenumber"
+            placeholder="Phone Number"
+            required
+          />
+        </div>
+        <!-- phone number end -->
+
+        <!-- buttons -->
+
+        <div class="add-reset">
+          <button type="submit" class="button addButton" id="addButton">
+            Submit
+          </button>
+          <button type="reset" class="resetButton button">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="AddressBookForm.js"></script>
+  </body>
+</html>

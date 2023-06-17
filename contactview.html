@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactview.css" />
+    <title>View AddressBook</title>
+  </head>
+
+  <body>
+    <header class="header-content header">
+      <div class="logo-content">
+        <img
+          src="Address Book logo.png"
+          alt="logo here"
+        />
+        <div>
+          <span class="address-text">ADDRESS</span><br />
+          <span class="address-text book-text">BOOK</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="header-content">
+        <div class="person-details-text">Person Details:</div>
+        <a href="AddressbookForm.html" class="add-button">
+          <img
+            src=""
+            alt="add logo"
+            style="height: 23px"
+          />
+          ADD CONTACT
+        </a>
+      </div>
+      <table id="table-display" class="table-display">
+            <th>Name</th><th>Address</th><th>State</th><th>City</th><th>Zip</th><th>PhoneNumber</th><th></th>
+                <tr>
+                    <td>Yash</td>
+                    <td>Shiv Chowk</td>
+                    <td>Dhule</td>
+                    <td>Maharashtra</td>
+                    <td>424002</td>
+                    <td>9637549995</td>
+                    <td>
+                        <img src="delete icon.png" onclick="deleteContact(this)">
+                        <img src="edit icon.png" onclick="editContact(this)" alt="edit contact">
+                    </td>
+                </tr>
+               
+
+
+      </table>
+    </div>
+    <script src="contactview.js"></script>
+  </body>
+</html>
